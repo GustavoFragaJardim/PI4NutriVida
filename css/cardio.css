@@ -210,6 +210,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 
 .btn.btn-blue {
 	background: #00a8ff;
+	float: center;
 }
 
 .btn.btn-blue:hover {

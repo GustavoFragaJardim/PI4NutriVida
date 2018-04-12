@@ -69,7 +69,7 @@ window.onclick = function(event) {
             var focusInput = $('.questions').find('.active');
             if (focusInput.val() != '') {
               if ((focusInput.attr('name') == 'name' || focusInput.attr('name') == 'username') && focusInput.val().length < 2) {
-                errorMessage(erroEle, "isn't your " + focusInput.attr('name') + " bit small. ", 'visible', 1);
+                errorMessage(erroEle, "Sua resposta é muito curta", 'visible', 1);
               } else if (focusInput.attr('name') == 'email' && !validateEmail(focusInput.val())) {
                 errorMessage(erroEle, "Isso não é um " + focusInput.attr('name'), 'visible', 1);
               } else if (focusInput.attr('name') == 'phone' && !validatePhone(focusInput.val())) {
