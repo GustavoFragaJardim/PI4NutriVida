@@ -46,22 +46,25 @@
                     <li>
                 <span><label for="uname">Algumas perguntas indiscretas:</label></span>
                 <span><label for="uname">Seu peso</label></span>
-                        <input id="uname" name="peso" type="text" placeholder="Peso" autofocus/>
-          </li>
+                <input id="peso" size ="5" width="5" maxlength="5" placeholder="Peso" onkeypress='return SomenteNumero(event)' type="text" autofocus/> KG
+                   </li>
                     <li>
                 <span><label for="uname">Sua altura</label></span>
-                        <input id="uname" name="altura" type="text" placeholder="Altura" autofocus/>
+                        <input id="uname" name="altura" size ="5" width="5" maxlength="5" placeholder="Peso" onkeypress='return SomenteNumero(event)' type="text" autofocus/> MT
           </li><li>
                 <span><label for="uname">Sua circunferência abdominal em cm</label></span>
-                        <input id="uname" name="circunferencia_abdominal" type="text" placeholder="Circunferencia abdominal" autofocus/>
+                        <input id="uname" name="circunferencia_abdominal" size ="5" width="5" maxlength="5" placeholder="Circunferência Abdominal" onkeypress='return SomenteNumero(event)' type="text" autofocus/> CM
           </li><li>
                 <span><label for="uname">Sua Circunferência do pescoco</label></span>
-                        <input id="uname" name="circunferencia_pescoco" type="text" placeholder="Circunferencia pescoco" autofocus/>
+                        <input id="uname" name="circunferencia_pescoco" size ="5" width="5" maxlength="5" placeholder="Circunferência do Pescoço" onkeypress='return SomenteNumero(event)' type="text" autofocus/> CM
           </li>
           <li>
                 <span><label for="uname">Seu sexo</label></span>
-                        <input id="uname" name="sexo" type="text" placeholder="Sexo" autofocus/>
-          </li>
+                    <input id="uname" name="sexo"  placeholder="sexo"  type="text" autofocus/>
+
+                    <!--  <label><input  id="sexo" name="sexo" type="radio" value="" autofocus>Masculino</label>                                           <label><input  id="sexo" name="sexo" type="radio" value="" autofocus>Feminino</label>
+                      <label><input  id="sexo" name="sexo" type="radio" value="" autofocus>Outros</label> -->
+                </li>
           <li>
                 <span><label for="uname">Qual o seu objetivo?</label></span>
                  <input id="uname" name="objetivo" type="text" placeholder="Ganho de massa, emagrecimento ou manter o físico" autofocus/>                  
@@ -114,6 +117,21 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
     <script  src="js/index.js"></script>
+
+
+<script language='JavaScript'>
+function SomenteNumero(e){
+    var tecla=(window.event)?event.keyCode:e.which;   
+    if((tecla>47 && tecla<58 || tecla==44)) return true;
+    else{
+      if (tecla==8 || tecla==0) return true;
+  else  return false;
+    }
+}
+</script>
+
+
+
 
 </body>
 </html>

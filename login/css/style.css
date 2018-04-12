@@ -84,15 +84,16 @@ body {
   margin-bottom: 10px;
 }
 .container .sign-form .questions li input {
-  width: 100%;
+  width: 70%;
   font-size: .9em;
   color: #f2f2f2;
   margin: 0.3em 0 1em 0;
   border: none;
   background: none;
   border-bottom: 3px solid #fff;
-  padding: 0.5em 0.1em;
+  padding: 0.01em 0.01em;
   transition: all 0.5s ease;
+  align-content: left;
 }
 .container .sign-form .questions li input:focus {
   outline: none;

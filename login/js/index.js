@@ -64,7 +64,14 @@ window.onclick = function(event) {
             })
 
           });
-
+          function SomenteNumero(e){
+    var tecla=(window.event)?event.keyCode:e.which;   
+    if((tecla>47 && tecla<58)) return true;
+    else{
+      if (tecla==8 || tecla==0) return true;
+  else  return false;
+    }
+}
           function nextMaster(type) {
             var focusInput = $('.questions').find('.active');
             if (focusInput.val() != '') {
@@ -100,6 +107,7 @@ window.onclick = function(event) {
               $('#next-page').css('opacity', 0);
             }
           });
+          
 
           $("#password").keyup(function(event) {
             var focusInput = $(this);
